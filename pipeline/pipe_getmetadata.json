@@ -1,0 +1,46 @@
+{
+	"name": "pipe_getmetadata",
+	"properties": {
+		"activities": [
+			{
+				"name": "MetaDados",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_generico_csv",
+						"type": "DatasetReference",
+						"parameters": {
+							"conteinerName": "csvfiles",
+							"fileName": "csvCor1.csv",
+							"separetorName": ";"
+						}
+					},
+					"fieldList": [
+						"exists"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"modifiedDatetimeStart": "2022-09-07T00:00:00.901Z",
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-09-07T22:41:02Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

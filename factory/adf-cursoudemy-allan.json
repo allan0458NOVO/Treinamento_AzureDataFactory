@@ -1,0 +1,9 @@
+{
+	"name": "adf-cursoudemy-allan",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8b45677c-2ec7-4394-8e07-46535450ea83",
+		"tenantId": "3f80d236-0b10-46d4-abe8-f142079757df"
+	}
+}
